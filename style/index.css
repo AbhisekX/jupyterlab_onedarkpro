@@ -7,6 +7,6 @@ kbd,
 samp,
 pre {
   font-family: var(--jp-code-font-family);
-  font-size: var(--jp-code-font-size);
+  font-size: var(--jp-code-font-size) !important;
   line-height: var(--jp-code-line-height);
 }
