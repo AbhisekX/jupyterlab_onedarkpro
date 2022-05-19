@@ -29,20 +29,20 @@ all of MD as it is not optimized for dense, information rich UIs.
 :root {
   /* Atom one dark colours (adjusted for higher contrast) */
   --one-dark-cyan: #51B6C3;
-	--one-dark-blue: #5DAEF2;
-	--one-dark-mono-2: #828997;
-	--one-dark-red-1: #E26B73;
-	--one-dark-mono-1: #ABB2C0;
-	--one-dark-silver: #AAAAAA;
-	--one-dark-purple: #C775DF;
-	--one-dark-orange-2: #E6C176;
-	--one-dark-gutter: #666D7A;
-	--one-dark-fg: #ABB2BF;
-	--one-dark-green: #97C475;
-	--one-dark-red-2: #BE5046;
-	--one-dark-orange-1: #D29B62;
-	--one-dark-mono-3: #495163;
-	--one-dark-accent: #AEB9F5;
+  --one-dark-blue: #5DAEF2;
+  --one-dark-mono-2: #828997;
+  --one-dark-red-1: #E26B73;
+  --one-dark-mono-1: #ABB2C0;
+  --one-dark-silver: #AAAAAA;
+  --one-dark-purple: #C775DF;
+  --one-dark-orange-2: #E6C176;
+  --one-dark-gutter: #666D7A;
+  --one-dark-fg: #ABB2BF;
+  --one-dark-green: #97C475;
+  --one-dark-red-2: #BE5046;
+  --one-dark-orange-1: #D29B62;
+  --one-dark-mono-3: #495163;
+  --one-dark-accent: #AEB9F5;
   --one-dark-bg-1: #21252b;
   --one-dark-bg-2: #282c34;
   --one-dark-gray-1: #3E4451;
@@ -225,6 +225,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-layout-color2: var(--one-dark-bg-1);
   --jp-layout-color3: var(--one-dark-bg-1);
   --jp-layout-color4: var(--one-dark-bg-1);
+
+  --jp-icon-contrast-color0: var(--one-dark-button-gray);
+  --jp-icon-contrast-color1: var(--one-dark-button-gray);
 
   /* Inverse Layout
    *
@@ -508,9 +511,9 @@ li.lm-Menu-item.p-Menu-item:not([data-type=separator]):hover {
 
 /* Change the colour of linenumbers */
 .CodeMirror-linenumber {
-	padding: 0 3px 0 5px;
-	min-width: 20px;
-	text-align: center;
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: center;
   color: var(--one-dark-gray-2);
   background-color: var(--one-dark-bg-2);
   white-space: nowrap;
@@ -520,7 +523,7 @@ li.lm-Menu-item.p-Menu-item:not([data-type=separator]):hover {
 .CodeMirror-gutters {
   border-right: none;
   background-color: var(--one-dark-bg-2);
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .CodeMirror-gutter {
@@ -529,28 +532,28 @@ li.lm-Menu-item.p-Menu-item:not([data-type=separator]):hover {
 
 /* Do some nice things with brackets */
 div.CodeMirror span.CodeMirror-matchingbracket {
-	color: var(--one-dark-blue);
-	border-bottom: 1px solid var(--one-dark-blue);
-	line-height: 1;
+  color: var(--one-dark-blue);
+  border-bottom: 1px solid var(--one-dark-blue);
+  line-height: 1;
 }
 div.CodeMirror span.CodeMirror-nonmatchingbracket {
-	color: var(--one-dark-mono-1);
-	border-bottom: 1px solid var(--one-dark-red-1);
-	line-height: 0.55;
+  color: var(--one-dark-mono-1);
+  border-bottom: 1px solid var(--one-dark-red-1);
+  line-height: 0.55;
 }
 .CodeMirror-matchingtag {
   /* background: rgba(255, 150, 0, .3); */
   background: rgba(81, 182, 195, 0.3)
 }
 .CodeMirror-activeline-background {
-	background: #e8f2ff;
+  background: #e8f2ff;
 }
 
 .CodeMirror-selected {
-	background: var(--one-dark-mono-3);
+  background: var(--one-dark-mono-3);
 }
 .CodeMirror-focused .CodeMirror-selected {
-	background: var(--one-dark-mono-3);
+  background: var(--one-dark-mono-3);
 }
 
 /* selected text highlight */
@@ -558,19 +561,19 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 .jp-DirListing-item.jp-mod-selected {
   /* color: white; */
   color: var(--one-dark-mono-1);
-	background: var(--one-dark-bg-2);
+  background: var(--one-dark-bg-2);
 }
 
 /* Makes the running icon a tiny bit bigger */
 .jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
-	color: var(--one-dark-green);
-	content: "\25CF";
-	font-size: 12px;
-	position: relative;
-	width: 100%;
-	height: 100%;
-	top: -2px;
-	left: -8px;
+  color: var(--one-dark-green);
+  content: "\25CF";
+  font-size: 12px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -2px;
+  left: -8px;
 }
 
 /*.jp-Toolbar-item.jp-Toolbar-kernelStatus {
@@ -585,56 +588,56 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 /* width */
 ::-webkit-scrollbar {
-	width: 6px;
-	height: 6px;
+  width: 6px;
+  height: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-	background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: var(--one-dark-mono-3);
-	border-radius: 10px;
+  background: var(--one-dark-mono-3);
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--one-dark-mono-3);
+  background: var(--one-dark-mono-3);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb:active {
-	background: var(--one-dark-blue);
+  background: var(--one-dark-blue);
 }
 
 /* Center any plots e.g. Matplotlib plots */
 /* .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 } */
 
 /* Highlighted line in tab-completion menu */
 .jp-Completer-item.jp-mod-active {
-	color: var(--one-dark-off-white);
-	background: var(--one-dark-gray-1);
+  color: var(--one-dark-off-white);
+  background: var(--one-dark-gray-1);
 }
 
 
 /* Custom line rule */
 .jp-RenderedHTMLCommon hr {
-	display: block;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 0em;
-	margin-right: 0em;
-	border-style: inset;
-	border-width: 1px;
-	border-top: 1px solid var(--one-dark-fg);
-	border-bottom: 1px solid var(--one-dark-fg);
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0em;
+  margin-right: 0em;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px solid var(--one-dark-fg);
+  border-bottom: 1px solid var(--one-dark-fg);
 }
 
 /* Markdown inline code */
@@ -644,21 +647,21 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 }
 
 .jp-MarkdownOutput {
-	flex: 1 1 auto;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: var(--jp-code-padding);
+  flex: 1 1 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: var(--jp-code-padding);
   padding-right: var(--jp-code-padding);
   font-family: var(--markdown-font), "Open Sans", sans-serif;
 }
 
 .cm-s-zenburn {
-	background-color: var(--one-dark-bg-1);
-	color: var(--one-dark-fg);
+  background-color: var(--one-dark-bg-1);
+  color: var(--one-dark-fg);
 }
 
 .cm-s-zenburn .CodeMirror-gutters {
-	/* background: var(--one-dark-bg-1) !important; */
+  /* background: var(--one-dark-bg-1) !important; */
 }
 
 .jp-Notebook .jp-Cell .jp-Collapser
