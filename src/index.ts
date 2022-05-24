@@ -17,8 +17,9 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const style = '@abhisek/jupyterlab_onedarkpro/index.css';
 
     manager.register({
-      name: '@abhisek/jupyterlab_onedarkpro',
-      isLight: true,
+      name: 'JupyterLab OneDarkPro',
+      isLight: false,
+      themeScrollbars: true,
       load: () => manager.loadCSS(style),
       unload: () => Promise.resolve(undefined)
     });
