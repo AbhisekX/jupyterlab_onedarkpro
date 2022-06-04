@@ -259,7 +259,7 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 /* Markdown inline code */
 .jp-RenderedHTMLCommon code, .jp-RenderedHTMLCommon pre {
   padding: 0px 3px;
-  background-color: white;
+  background-color: var(--one-dark-bg-1);
   /* font-size: var() 1em !important; */
 }
 
